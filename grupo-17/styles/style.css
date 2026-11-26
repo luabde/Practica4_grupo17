@@ -1,0 +1,538 @@
+/* ESTILOS COMUNES A TODAS LAS DIAPOSITIVAS */
+
+/* Página y valores base */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f7fafc;
+    color: #122654;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.24;
+}
+
+h1, h2, p, ul {
+    margin: 0;
+}
+
+/* Estructura de diapositivas */
+.franja, .diapositiva, .navegacion {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.franja {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4dae4;
+    color: #1f5cc7;
+    font-weight: 700;
+}
+
+.diapositiva {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.separacion {
+    margin-top: 14px;
+}
+
+.columnas, .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnas {
+    align-items: center;
+}
+
+.columna, .celda {
+    width: 49%;
+}
+
+.separacion-fila {
+    margin-top: 8px;
+}
+
+.separacion-corta {
+    margin-top: 6px;
+}
+
+/* Tipografía */
+h1 {
+    font-size: 2.875rem;
+    line-height: 1.13;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.14;
+}
+
+.subtitulo {
+    margin-top: 4px;
+    color: #1f5cc7;
+}
+
+.secundario, .pie-imagen, .franja, .navegacion, .marcador {
+    font-size: 1.125rem;
+}
+
+.secundario {
+    color: #616b7d;
+}
+
+.nota {
+    margin-top: 8px;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-top: 1px solid #d4dae4;
+}
+
+.navegacion a {
+    padding: 8px 16px;
+    border: 1px solid #1f5cc7;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.anterior {
+    background: #fff;
+    color: #1f5cc7;
+}
+
+.siguiente {
+    margin-left: auto;
+    background: #1f5cc7;
+    color: #fff;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Tarjetas */
+.tarjeta, .panel {
+    padding: 14px 16px;
+    border: 1px solid #d4dae4;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.panel {
+    background: #edf5ff;
+}
+
+/* Imágenes y placeholders */
+.marco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    border: 1px solid #d4dae4;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.marco img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.marcador {
+    max-width: 100%;
+    padding: 6px 8px;
+    color: #616b7d;
+    text-align: center;
+}
+
+.pie-imagen {
+    margin-top: 4px;
+    font-weight: 700;
+}
+
+/* Bloques de código */
+.bloque-codigo {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #122654;
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 1.17;
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.sangria {
+    padding-left: 2.5rem;
+}
+
+.sangria-doble {
+    padding-left: 5rem;
+}
+
+/* ESTILOS ESPECÍFICOS POR DIAPOSITIVA */
+
+/* 01. Portada */
+.portada {
+    background: #edf5ff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.17;
+}
+
+.equipo {
+    margin-top: 22px;
+    font-weight: 700;
+}
+
+.navegador {
+    padding-top: 22px;
+    border: 1px solid #c7d7ea;
+    border-radius: 12px;
+    background: #c7d7ea;
+}
+
+.navegador .marco {
+    height: 50vh;
+    border-radius: 0 0 11px 11px;
+}
+
+/* 02. Proyecto y análisis PACT */
+.ficha-pact {
+    width: 46.5%;
+    display: flex;
+    align-items: center;
+}
+
+.ficha-pact h2 {
+    margin-bottom: 4px;
+}
+
+.letra {
+    min-width: 52px;
+    margin-right: 16px;
+    border-radius: 8px;
+    background: #edf5ff;
+    color: #1f5cc7;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+}
+
+/* 03. Benchmarking */
+.comparativa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultado {
+    width: 29.5%;
+}
+
+.medidas {
+    margin-top: 8px;
+}
+
+.medidas strong {
+    font-size: 2.5rem;
+    line-height: 1.12;
+}
+
+.medidas span {
+    margin-left: 8px;
+    color: #616b7d;
+}
+
+.pista {
+    margin: 10px 0 8px;
+    border-radius: 8px;
+    background: #edf5ff;
+}
+
+.barra {
+    height: 8px;
+    border-radius: 8px;
+    background: #1f5cc7;
+}
+
+.salut { width: 37.5%; }
+.policia { width: 100%; }
+.booksy { width: 31.25%; }
+
+.decisiones ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    margin-top: 6px;
+}
+
+.decisiones li {
+    margin-right: 30px;
+}
+
+/* 04. Bocetos */
+.sketch {
+    background: #edf5ff;
+}
+
+/* Alinea el encabezado con la diapositiva de componentes en proyección. */
+.sketch .diapositiva {
+    padding-top: 100px;
+}
+
+.sketch .separacion {
+    margin-top: 8px;
+}
+
+.bocetos {
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.hoja-boceto {
+    width: 32%;
+    text-align: center;
+}
+
+.hoja-boceto .marco {
+    height: 65vh;
+}
+
+.boceto-error {
+    width: 34%;
+}
+
+.boceto-completo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 05. Componentes de Figma */
+.figma {
+    align-items: stretch;
+}
+
+.columna-fecha {
+    width: 51%;
+}
+
+.columna-componentes {
+    width: 47%;
+}
+
+.figma h2 {
+    margin-bottom: 5px;
+}
+
+.columna-fecha .marco {
+    height: 57vh;
+}
+
+.muestras {
+    margin-top: 8px;
+}
+
+.muestras .marco {
+    height: 23vh;
+}
+
+.variantes-separadas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.variantes-separadas img {
+    max-height: 48%;
+}
+
+.componentes .diapositiva {
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.componentes .separacion {
+    margin-top: 8px;
+}
+
+/* 06. Página de error */
+.error .marco {
+    height: 56vh;
+}
+
+.paso-error {
+    padding: 5px 12px;
+}
+
+/* 07. Estructura HTML */
+.html {
+    align-items: flex-start;
+}
+
+.html .marco {
+    height: 33vh;
+}
+
+/* 08. De Figma a CSS */
+.identidad {
+    align-items: flex-start;
+}
+
+.identidad h2 {
+    margin-bottom: 5px;
+}
+
+.paleta, .pesos {
+    font-size: 1.125rem;
+}
+
+.alfabeto {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.pesos {
+    margin-bottom: 12px;
+}
+
+.pesos span {
+    margin-right: 16px;
+}
+
+.medio {
+    font-weight: 500;
+}
+
+.paleta {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paleta li {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.muestra {
+    min-width: 25px;
+    height: 25px;
+    margin-right: 6px;
+    border: 1px solid #bcc7d6;
+    border-radius: 5px;
+}
+
+.oscuro { background: #122654; }
+.fondo { background: #f7fafc; }
+.principal { background: #1f5cc7; }
+.claro { background: #edf5ff; }
+.blanco { background: #fff; }
+.gris { background: #616b7d; }
+
+/* 09. Fragmento de CSS */
+.fragmento {
+    background: #edf5ff;
+}
+
+/* 10. Dificultades */
+.reto {
+    display: flex;
+}
+
+.reto h2 {
+    width: 42%;
+}
+
+.reto p {
+    width: 53%;
+}
+
+.reto span {
+    margin: auto 10px;
+    color: #1f5cc7;
+}
+
+.reto h2, .reto p {
+    padding: 8px 12px;
+}
+
+.siguiente-paso {
+    border-left: 4px solid #1f5cc7;
+    padding-left: 12px;
+}
+
+/* 11. Conclusiones */
+.cierre {
+    background: #122654;
+    color: #fff;
+}
+
+.cierre .subtitulo, .cierre .franja {
+    color: #d5e7ff;
+}
+
+.cierre .franja, .cierre .navegacion {
+    border-color: #55729e;
+}
+
+.proceso {
+    font-size: 1.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fase {
+    padding: 7px 12px;
+    border: 1px solid #7491bc;
+    border-radius: 8px;
+}
+
+.flecha {
+    margin: 0 8px;
+}
+
+.conclusiones {
+    padding-left: 26px;
+}
+
+.cita {
+    padding: 12px 16px;
+    border-left: 4px solid #a5caff;
+    background: #213c73;
+    font-weight: 700;
+}
+
+.gracias {
+    font-size: 2.5rem;
+    font-weight: 700;
+}

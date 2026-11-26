@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Figma a CSS | Grupo 17</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="sistema">
+    <header class="franja">
+        <span>Implementación</span>
+        <span>Diapositiva 08 / 11</span>
+    </header>
+    <main class="diapositiva">
+        <header class="encabezado">
+            <h1>De Figma a CSS</h1>
+            <p class="subtitulo">Tipografía y paleta cromática</p>
+        </header>
+        <div class="separacion columnas identidad">
+            <section class="columna">
+                <h2>Inter · Sans-serif</h2>
+                <p class="alfabeto">Aa Bb Cc 123</p>
+                <p class="nota secundario">Pide cita para renovar tu DNI.</p>
+                <p class="nota pesos"><span>Regular</span><span class="medio">Medium</span><strong>Bold</strong></p>
+                <h2>Paleta de Figma</h2>
+                <ul class="paleta">
+                    <li><span class="muestra oscuro" aria-hidden="true"></span><div><strong>#122654</strong><br>Azul oscuro</div></li>
+                    <li><span class="muestra fondo" aria-hidden="true"></span><div><strong>#F7FAFC</strong><br>Fondo general</div></li>
+                    <li><span class="muestra principal" aria-hidden="true"></span><div><strong>#1F5CC7</strong><br>Azul principal</div></li>
+                    <li><span class="muestra claro" aria-hidden="true"></span><div><strong>#EDF5FF</strong><br>Azul claro</div></li>
+                    <li><span class="muestra blanco" aria-hidden="true"></span><div><strong>#FFFFFF</strong><br>Blanco</div></li>
+                    <li><span class="muestra gris" aria-hidden="true"></span><div><strong>#616B7D</strong><br>Gris de texto</div></li>
+                </ul>
+            </section>
+            <section class="columna">
+                <h2>Propuesta de CSS</h2>
+                <div class="bloque-codigo">
+                    <code>body {</code><br>
+                    <code class="sangria">font-family: 'Inter', sans-serif;</code><br>
+                    <code class="sangria">background-color: #F7FAFC;</code><br>
+                    <code class="sangria">color: #616B7D;</code><br>
+                    <code>}</code><br>
+                    <code>h1, h2, h3 {</code><br>
+                    <code class="sangria">color: #122654;</code><br>
+                    <code>}</code><br>
+                    <code>.boton-principal {</code><br>
+                    <code class="sangria">background-color: #1F5CC7;</code><br>
+                    <code class="sangria">color: #FFFFFF;</code><br>
+                    <code>}</code>
+                </div>
+                <p class="nota secundario"><code>font-family</code> define la fuente. <code>background-color</code> fija el fondo y <code>color</code> el texto.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav class="navegacion">
+            <a class="anterior" href="07-html.html">← Anterior</a>
+            <a class="siguiente" href="09-css-fragmento.html">Siguiente →</a>
+        </nav>
+    </footer>
+</body>
+</html>
